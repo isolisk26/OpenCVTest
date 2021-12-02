@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		230C8E30275884E100A9FC40 /* OpenCVTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenCVTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		230C8E33275884E100A9FC40 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		230C8E3A27588A7C00A9FC40 /* OpenCVTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenCVTest.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		230C8E32275884E100A9FC40 /* OpenCVTest */ = {
 			isa = PBXGroup;
 			children = (
+				230C8E3A27588A7C00A9FC40 /* OpenCVTest.entitlements */,
 				230C8E33275884E100A9FC40 /* main.cpp */,
 			);
 			path = OpenCVTest;
@@ -177,11 +179,74 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/opt/opencv/include/opencv4;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/4.5.3_3/lib;
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-I/usr/local/opt/opencv/include/opencv4",
+					"-L/usr/local/opt/opencv/lib",
+					"-lopencv_gapi",
+					"-lopencv_stitching",
+					"-lopencv_alphamat",
+					"-lopencv_aruco",
+					"-lopencv_barcode",
+					"-lopencv_bgsegm",
+					"-lopencv_bioinspired",
+					"-lopencv_ccalib",
+					"-lopencv_dnn_objdetect",
+					"-lopencv_dnn_superres",
+					"-lopencv_dpm",
+					"-lopencv_face",
+					"-lopencv_freetype",
+					"-lopencv_fuzzy",
+					"-lopencv_hfs",
+					"-lopencv_img_hash",
+					"-lopencv_intensity_transform",
+					"-lopencv_line_descriptor",
+					"-lopencv_mcc",
+					"-lopencv_quality",
+					"-lopencv_rapid",
+					"-lopencv_reg",
+					"-lopencv_rgbd",
+					"-lopencv_saliency",
+					"-lopencv_sfm",
+					"-lopencv_stereo",
+					"-lopencv_structured_light",
+					"-lopencv_phase_unwrapping",
+					"-lopencv_superres",
+					"-lopencv_optflow",
+					"-lopencv_surface_matching",
+					"-lopencv_tracking",
+					"-lopencv_highgui",
+					"-lopencv_datasets",
+					"-lopencv_text",
+					"-lopencv_plot",
+					"-lopencv_videostab",
+					"-lopencv_videoio",
+					"-lopencv_viz",
+					"-lopencv_wechat_qrcode",
+					"-lopencv_xfeatures2d",
+					"-lopencv_shape",
+					"-lopencv_ml",
+					"-lopencv_ximgproc",
+					"-lopencv_video",
+					"-lopencv_dnn",
+					"-lopencv_xobjdetect",
+					"-lopencv_objdetect",
+					"-lopencv_calib3d",
+					"-lopencv_imgcodecs",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_xphoto",
+					"-lopencv_photo",
+					"-lopencv_imgproc",
+					"-lopencv_core",
+				);
 				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -230,16 +295,80 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/opt/opencv/include/opencv4;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/4.5.3_3/lib;
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-I/usr/local/opt/opencv/include/opencv4",
+					"-L/usr/local/opt/opencv/lib",
+					"-lopencv_gapi",
+					"-lopencv_stitching",
+					"-lopencv_alphamat",
+					"-lopencv_aruco",
+					"-lopencv_barcode",
+					"-lopencv_bgsegm",
+					"-lopencv_bioinspired",
+					"-lopencv_ccalib",
+					"-lopencv_dnn_objdetect",
+					"-lopencv_dnn_superres",
+					"-lopencv_dpm",
+					"-lopencv_face",
+					"-lopencv_freetype",
+					"-lopencv_fuzzy",
+					"-lopencv_hfs",
+					"-lopencv_img_hash",
+					"-lopencv_intensity_transform",
+					"-lopencv_line_descriptor",
+					"-lopencv_mcc",
+					"-lopencv_quality",
+					"-lopencv_rapid",
+					"-lopencv_reg",
+					"-lopencv_rgbd",
+					"-lopencv_saliency",
+					"-lopencv_sfm",
+					"-lopencv_stereo",
+					"-lopencv_structured_light",
+					"-lopencv_phase_unwrapping",
+					"-lopencv_superres",
+					"-lopencv_optflow",
+					"-lopencv_surface_matching",
+					"-lopencv_tracking",
+					"-lopencv_highgui",
+					"-lopencv_datasets",
+					"-lopencv_text",
+					"-lopencv_plot",
+					"-lopencv_videostab",
+					"-lopencv_videoio",
+					"-lopencv_viz",
+					"-lopencv_wechat_qrcode",
+					"-lopencv_xfeatures2d",
+					"-lopencv_shape",
+					"-lopencv_ml",
+					"-lopencv_ximgproc",
+					"-lopencv_video",
+					"-lopencv_dnn",
+					"-lopencv_xobjdetect",
+					"-lopencv_objdetect",
+					"-lopencv_calib3d",
+					"-lopencv_imgcodecs",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_xphoto",
+					"-lopencv_photo",
+					"-lopencv_imgproc",
+					"-lopencv_core",
+				);
 				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
 		230C8E38275884E100A9FC40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OpenCVTest/OpenCVTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AS636FDJV8;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -250,6 +379,7 @@
 		230C8E39275884E100A9FC40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OpenCVTest/OpenCVTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AS636FDJV8;
 				ENABLE_HARDENED_RUNTIME = YES;
