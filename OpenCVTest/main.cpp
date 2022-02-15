@@ -10,6 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
+    // naninani
     std::cout << "OpenCV Version" << CV_VERSION << std::endl;
     std::cout << "Hello, World!\n";
     return 0;
